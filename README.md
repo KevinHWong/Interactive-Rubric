@@ -142,6 +142,8 @@ var d = 0;
 var e = 0;
 var f = 0;
 
+
+
 function lime(){
 
 	if(a==1){
@@ -376,20 +378,198 @@ function twentyFour(){
 }
 
 
-
-function valueChanged(elem) {
-    if (document.getElementById("A").checked == true) {
-        document.getElementById("A").value = 1;
-        document.getElementById("B").value = 0;
-    } if (document.getElementById("B").checked == true) {
-        document.getElementById("A").value = 0;
-        document.getElementById("B").value = 1;
-    } if (document.getElementById("A").checked == true) {
-    	
-    }
-    console.log(document.getElementById("A").value);
-    console.log(document.getElementById("B").value)
+function BILLY(){
+	if (a == 1) {
+		document.getElementById("HH").innerHTML=3;
+	}
+	if (a == 2) {
+		document.getElementById("HH").innerHTML=2;
+	}
+	if (a == 3) {
+		document.getElementById("HH").innerHTML=1;
+	}
+	if (a == 4) {
+		document.getElementById("HH").innerHTML=0;
+	}
 }
+
+function BILLY2(){
+	if (b == 1) {
+		document.getElementById("H3").innerHTML=3;
+	}
+	if (b == 2) {
+		document.getElementById("H3").innerHTML=2;
+	}
+	if (b == 3) {
+		document.getElementById("H3").innerHTML=1;
+	}
+	if (b == 4) {
+		document.getElementById("H3").innerHTML=0;
+	}
+}
+
+function BILLY3(){
+	if (c == 1) {
+		document.getElementById("H2").innerHTML=3;
+	}
+	if (c == 2) {
+		document.getElementById("H2").innerHTML=2;
+	}
+	if (c == 3) {
+		document.getElementById("H2").innerHTML=1;
+	}
+	if (c == 4) {
+		document.getElementById("H2").innerHTML=0;
+	}
+}
+	
+function BILLY4(){
+	if (d == 1) {
+		document.getElementById("H1").innerHTML=3;
+	}
+	if (d == 2) {
+		document.getElementById("H1").innerHTML=2;
+	}
+	if (d == 3) {
+		document.getElementById("H1").innerHTML=1;
+	}
+	if (d == 4) {
+		document.getElementById("H1").innerHTML=0;
+	}
+}
+	
+function BILLY5(){
+	if (e == 1) {
+		document.getElementById("H0").innerHTML=3;
+	}
+	if (e == 2) {
+		document.getElementById("H0").innerHTML=2;
+	}
+	if (e == 3) {
+		document.getElementById("H0").innerHTML=1;
+	}
+	if (e == 4) {
+		document.getElementById("H0").innerHTML=0;
+	}
+}
+	
+function BILLY6(){
+	if (f == 1) {
+		document.getElementById("HHH").innerHTML=3;
+	}
+	if (f == 2) {
+		document.getElementById("HHH").innerHTML=2;
+	}
+	if (f == 3) {
+		document.getElementById("HHH").innerHTML=1;
+	}
+	if (f == 4) {
+		document.getElementById("HHH").innerHTML=0;
+	}
+
+}
+
+var total = 0;
+var total2 = 0;
+var total3 = 0;
+var total4 = 0;
+var total5 = 0;
+var total6 = 0;
+
+function I(){
+ if (a == 1){
+  total = 3;
+ }
+ if (a == 2) {
+  total = 2;
+ }
+ if (a == 3){
+  total = 1;
+ }
+ if (a == 4) {
+  total = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+function II(){
+ if (b == 1){
+  total2 = 3;
+ }
+ if (b == 2) {
+  total2 = 2;
+ }
+ if (b == 3){
+  total2 = 1;
+ }
+ if (b == 4) {
+  total2 = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+function III(){
+ if (c == 1){
+  total3 = 3;
+ }
+ if (c == 2) {
+  total3= 2;
+ }
+ if (c == 3){
+  total3 = 1;
+ }
+ if (c == 4) {
+  total3 = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+function IV(){
+ if (d == 1){
+  total4 = 3;
+ }
+ if (d == 2) {
+  total4 = 2;
+ }
+ if (d == 3){
+  total4 = 1;
+ }
+ if (d == 4) {
+  total4 = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+function V(){
+ if (e == 1){
+  total5 = 3;
+ }
+ if (e == 2) {
+  total5 = 2;
+ }
+ if (e == 3){
+  total5 = 1;
+ }
+ if (e == 4) {
+  total5 = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+function VI(){
+ if (f == 1){
+  total6 = 3;
+ }
+ if (f == 2) {
+  total6 = 2;
+ }
+ if (f == 3){
+  total6 = 1;
+ }
+ if (f == 4) {
+  total6 = 0;
+ }
+ document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
+}
+
+
+
+
 
 
 
@@ -411,29 +591,29 @@ function valueChanged(elem) {
 	</tr>
 	
 	<tr id="B">
-		<td div id="HH"></td>
+		<td id="HH"></td>
 		<th id="BB">Author:<br />What are the author's credentials and affiliation? Is the author an expert?</th>
-		<td id="B3" onclick="one();lime();gold();chocolate();red();totals();" onChange="valueChanged();">
+		<td id="B3" onclick="one();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">
 						The author's credentials indicate that he/she is an expert on this topic. The author gives contact info or professional affiliation.
-						<br /><input type="radio" name="A" id="AAA" value="3" onchange="valueChanged()" /><br></td>
+						</td>
 
 
-		<td id="B2" onclick="two();lime();gold();chocolate();red();" onChange="valueChanged();">			The author is named but credentials and/or contact info (online sources) is incomplete.
-			<br /><input type="radio" name="A" id="BBB" value="2" onchange="valueChanged()" /><br></td>
+		<td id="B2" onclick="two();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">			The author is named but credentials and/or contact info (online sources) is incomplete.
+			</td>
 		
-		<td id="B1" onclick="three();lime();gold();chocolate();red();" onChange="valueChanged();">
-						The author is unnamed and/or no credentials are given.	<br /><input type="radio" name="A" id="CCC" value="1" onchange="valueChanged()" /><br>
+		<td id="B1" onclick="three();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">
+						The author is unnamed and/or no credentials are given.	
 </td>
 		
-		<td id="B0" onclick="four();lime();gold();chocolate();red();" onChange="valueChanged();">			The author is named, but is clearly not an expert on the topic (published by student or fans).
-			<br /><input type="radio" name="A" id="DDD" value="0" onchange="valueChanged()" /><br></td>
+		<td id="B0" onclick="four();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">			The author is named, but is clearly not an expert on the topic (published by student or fans).
+			</td>
 	</tr>
 
 	<tr id="C">
 		<td id="H3"></td>
 		<th id="CC">Publisher:<br />Is the source published by a reputable publisher or organization?
 </th>
-		<td id="C3" onclick="five();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="C3" onclick="five();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
 Published by:
 
 
@@ -445,9 +625,9 @@ or
 
 
 in a Reference or academic book
-	<br /><input type="radio" name="B" id="EEE" value="3" onchange="valueChanged()" /><br></td>
+	</td>
 		
-		<td id="C2" onclick="six();lime();gold();chocolate();red();" onChange="valueChanged();">Published by a known:
+		<td id="C2" onclick="six();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">Published by a known:
 
 
 *organization
@@ -455,9 +635,9 @@ in a Reference or academic book
 *business
 *magazine/newspaper
 or
-   in a print book	<br /><input type="radio" name="B" id="FFF" value="2" onchange="valueChanged()" /><br></td>
+   in a print book</td>
 
-		<td id="C1" onclick="seven();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="C1" onclick="seven();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
 Published by:
 
 
@@ -468,9 +648,9 @@ Published by:
 
 
 *an unknown organization (.org).
-	<br /><input type="radio" name="B" id="GGG" value="1" onchange="valueChanged()" /><br></td>
+	</td>
 
-		<td id="C0" onclick="eight();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="C0" onclick="eight();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
 
 Self-published:
 
@@ -479,7 +659,7 @@ blogs, personal web pages, etc.
 
 Look for the symbols ~% or the words "users" "members" etc. in the URL
 
-	<br /><input type="radio" name="B" id="HHH" value="0" onchange="valueChanged()" /><br></td>
+	</td>
 	
 	</tr>
 	
@@ -487,20 +667,20 @@ Look for the symbols ~% or the words "users" "members" etc. in the URL
 		<td id="H2"></td>
 		<th id="DD">Sources Sited:<br />Is the information cited?
 </th>
-		<td id="D3" onclick="nine();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="D3" onclick="nine();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
 								The work is original research/info by a reputable source.  There is a Works Cited list and/or a Bibliography.
-									<br /><input type="radio" name="C" id="III" value="3" onchange="valueChanged()" /><br>
+									
 </td>
-		<td id="D2" onclick="ten();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="D2" onclick="ten();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
 								The work is a compilation of research/info by a reputable source. No Works Cited information as a list.
-									<br /><input type="radio" name="C" id="JJJ" value="2" onchange="valueChanged()" /><br>
+									
 </td>
-		<td id="D1" onclick="eleven();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="D1" onclick="eleven();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
 								There is a statement about the source of information embedded in the source, but no Works Cited list.
-									<br /><input type="radio" name="C" id="KKK" value="1" onchange="valueChanged()" /><br>
+								
 </td>
-		<td id="D0" onclick="twelve();lime();gold();chocolate();red();" onChange="valueChanged();">
-				<br /><input type="radio" name="C" id="LLL" value="0" onchange="valueChanged()" /><br>
+		<td id="D0" onclick="twelve();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
+				
 								No indication of where the information came from.
 </td>
 	</tr>
@@ -510,66 +690,66 @@ Look for the symbols ~% or the words "users" "members" etc. in the URL
 		<td id="H1"></td>
 		<th id="EE">Purpose:<br />Why was this information published?
 </th>
-		<td id="E3" onclick="thirteen();lime();gold();chocolate();red();" onChange="valueChanged();">To promote scholarly research.	<br /><input type="radio" name="D" id="MMM" value="3" onchange="valueChanged()" /><br></td>
-		<td id="E2" onclick="fourteen();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="E3" onclick="thirteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">To promote scholarly research.</td>
+		<td id="E2" onclick="fourteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
 							To provide factual information. Some opinion may be included.
-								<br /><input type="radio" name="D" id="NNN" value="2" onchange="valueChanged()" /><br>
+							
 </td>
-		<td id="E1" onclick="fifteen();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="E1" onclick="fifteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
 							To sell something, to persuade, or to promote an idea.
-								<br /><input type="radio" name="D" id="OOO" value="1" onchange="valueChanged()" /><br>
+								
 </td>
-		<td id="E0" onclick="sixteen();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="E0" onclick="sixteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
 							For personal or entertainment purposes.
-								<br /><input type="radio" name="D" id="PPP" value="0" onchange="valueChanged()" /><br>
+								
 </td>
 	</tr>
 	<tr id="F">
 		<td id="H0"></td>
 		<th id="FF">Date:<br />How current is the information?
 </th>
-		<td id="F3" onclick="seventeen();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="F3" onclick="seventeen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
 Online:
 The info is less than 1 year old.
 
 
 Print:
 The info is less than 3 years old.
-	<br /><input type="radio" name="E" id="QQQ" value="3" onchange="valueChanged()" /><br></td>
-		<td id="F2" onclick="eighteen();lime();gold();chocolate();red();" onChange="valueChanged();">
+	</td>
+		<td id="F2" onclick="eighteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
 Online: 
 The info is less than 3 years old.
 
 
 Print:
 The information is more than 3 years old, but is not necessarily out of date.
-	<br /><input type="radio" name="E" id="RRR" value="2" onchange="valueChanged()" /><br></td>
-		<td id="F1" onclick="nineteen();lime();gold();chocolate();red();" onChange="valueChanged();">
+	</td>
+		<td id="F1" onclick="nineteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
 The information is more than five years old.
-	<br /><input type="radio" name="E" id="SSS" value="1" onchange="valueChanged()" /><br></td>
-		<td id="F0" onclick="twenty();lime();gold();chocolate();red();" onChange="valueChanged();">
+	</td>
+		<td id="F0" onclick="twenty();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
 There is no indication of when the information was published.
-	<br /><input type="radio" name="E" id="TTT" value="0" onchange="valueChanged()" /><br></td>
+	</td>
 	</tr>
 	
 	<tr id="G">
 		<td id="HHH"></td>
 		<th id="GG">Substance:</th>
-		<td id="G3" onclick="twentyOne();lime();gold();chocolate();red();" onChange="valueChanged();">
+		<td id="G3" onclick="twentyOne();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
 				Depth of coverage needed for your purpose and written at a college or professional level.
-	<br /><input type="radio" name="F" id="UUU" value="3" onchange="valueChanged()" /><br></td>
-		<td id="G2" onclick="twentyTwo();lime();gold();chocolate();red();" onChange="valueChanged();">
+	/td>
+		<td id="G2" onclick="twentyTwo();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
 				Written for the general public.
-	<br /><input type="radio" name="F" id="VVV" value="2" onchange="valueChanged()" /><br></td>
-		<td id="G1" onclick="twentyThree();lime();gold();chocolate();red();" onChange="valueChanged();">
+	</td>
+		<td id="G1" onclick="twentyThree();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
 				Lacking the depth needed for your purpose.
-	<br /><input type="radio" name="F" id="WWW" value="1" onchange="valueChanged()" /><br></td>
-		<td id="G0" onclick="twentyFour();lime();gold();chocolate();red();" onChange="valueChanged();">
+	</td>
+		<td id="G0" onclick="twentyFour();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
 				No depth, contains excessive colloquialisms, slang, use of "I"
-	<br /><input type="radio" name="F" id="XXX" value="0" onchange="valueChanged()" /><br></td>
+	</td>
 	</tr>
 	<tr id="H">
-		<td id="BANANA" colspan="6"></td>
+		<td id="BANANA" colspan="6" ></td>
 	
 </table>
 <div id="Bobby">Score Totals:<br />
