@@ -3,54 +3,14 @@
 <style type="text/css">
 
 
-body{text-align: center}
-
-
-#Bobby{width: 90%; 
-
-	text-align: left;
-
-	margin:auto;
-	
-	font-size: 17px
+body{text-align: center;
+font-family: Times;
 }
 
-#Bobby2{width: 100%; 
+#Table2{text-align: center;}
 
-	text-align: left;
-
-	margin:auto;
-	
-	font-size: 17px
-}
-
-#Bobby3{width: 100%; 
-
-	text-align: left;
-
-	margin:left;
-	
-	font-size: 17px
-}
-
-#Bobby4{width: 100%; 
-
-	text-align: left;
-
-	margin:left;
-	
-	font-size: 17px
-}
-
-#Bobby5{width: 100%; 
-
-	text-align: left;
-
-	margin:left;
-	
-	font-size: 17px
-}
-
+#BANANA{font-weight: bold;
+		font-size:22px;}
 
 
 
@@ -225,7 +185,7 @@ function gold(){
 
 function chocolate(){
 	if(a==3){
-		document.getElementById("B1").style.background = "#FFA500";
+		document.getElementById("B1").style.background = "#FFA500"; 
 	}
 	if(a!=3){
 		document.getElementById("B1").style.background = "white";
@@ -476,6 +436,7 @@ var total4 = 0;
 var total5 = 0;
 var total6 = 0;
 
+
 function I(){
  if (a == 1){
   total = 3;
@@ -491,6 +452,7 @@ function I(){
  }
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
+
 function II(){
  if (b == 1){
   total2 = 3;
@@ -506,6 +468,7 @@ function II(){
  }
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
+
 function III(){
  if (c == 1){
   total3 = 3;
@@ -521,6 +484,7 @@ function III(){
  }
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
+
 function IV(){
  if (d == 1){
   total4 = 3;
@@ -536,6 +500,7 @@ function IV(){
  }
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
+
 function V(){
  if (e == 1){
   total5 = 3;
@@ -551,6 +516,7 @@ function V(){
  }
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
+
 function VI(){
  if (f == 1){
   total6 = 3;
@@ -567,8 +533,37 @@ function VI(){
  document.getElementById("BANANA").innerHTML=total + total2 + total3 + total4 + total5 + total6
 }
 
+function VII(){
+if (total + total2 + total3 + total4 + total5 + total6 >= 0 && total + total2 + total3 + total4 + total5 + total6 <= 6){
+	document.getElementById("Bobby2").style.background = "red"
+}else{
+	document.getElementById("Bobby2").style.background = "white"
+}
+}
 
+function VIII(){
+	if (total + total2 + total3 + total4 + total5 + total6 >= 7 && total + total2 + total3 + total4 + total5 + total6 <= 10){
+		document.getElementById("Bobby3").style.background = "#FFA500"
+	}else{
+		document.getElementById("Bobby3").style.background = "white"
+}	
+}	
 
+function VIIII(){
+	if (total + total2 + total3 + total4 + total5 + total6 >= 11 && total + total2 + total3 + total4 + total5 + total6 <= 14){
+		document.getElementById("Bobby4").style.background = "gold"
+	}else{
+		document.getElementById("Bobby4").style.background = "white"
+}	
+}
+
+function X(){
+	if (total + total2 + total3 + total4 + total5 + total6 >= 15 && total + total2 + total3 + total4 + total5 + total6 <= 18){
+		document.getElementById("Bobby5").style.background = "lime"
+	}else{
+		document.getElementById("Bobby5").style.background = "white"
+}	
+}				
 
 
 
@@ -593,19 +588,19 @@ function VI(){
 	<tr id="B">
 		<td id="HH"></td>
 		<th id="BB">Author:<br />What are the author's credentials and affiliation? Is the author an expert?</th>
-		<td id="B3" onclick="one();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">
+		<td id="B3" onclick="one();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 						The author's credentials indicate that he/she is an expert on this topic. The author gives contact info or professional affiliation.
 						</td>
 
 
-		<td id="B2" onclick="two();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">			The author is named but credentials and/or contact info (online sources) is incomplete.
+		<td id="B2" onclick="two();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">			The author is named but credentials and/or contact info (online sources) is incomplete.
 			</td>
 		
-		<td id="B1" onclick="three();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">
+		<td id="B1" onclick="three();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 						The author is unnamed and/or no credentials are given.	
 </td>
 		
-		<td id="B0" onclick="four();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();">			The author is named, but is clearly not an expert on the topic (published by student or fans).
+		<td id="B0" onclick="four();lime();gold();chocolate();red();BILLY();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">			The author is named, but is clearly not an expert on the topic (published by student or fans).
 			</td>
 	</tr>
 
@@ -613,7 +608,7 @@ function VI(){
 		<td id="H3"></td>
 		<th id="CC">Publisher:<br />Is the source published by a reputable publisher or organization?
 </th>
-		<td id="C3" onclick="five();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
+		<td id="C3" onclick="five();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 Published by:
 
 
@@ -627,7 +622,7 @@ or
 in a Reference or academic book
 	</td>
 		
-		<td id="C2" onclick="six();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">Published by a known:
+		<td id="C2" onclick="six();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">Published by a known:
 
 
 *organization
@@ -637,7 +632,7 @@ in a Reference or academic book
 or
    in a print book</td>
 
-		<td id="C1" onclick="seven();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
+		<td id="C1" onclick="seven();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 Published by:
 
 
@@ -650,7 +645,7 @@ Published by:
 *an unknown organization (.org).
 	</td>
 
-		<td id="C0" onclick="eight();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();">
+		<td id="C0" onclick="eight();lime();gold();chocolate();red();BILLY2();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 
 Self-published:
 
@@ -667,19 +662,19 @@ Look for the symbols ~% or the words "users" "members" etc. in the URL
 		<td id="H2"></td>
 		<th id="DD">Sources Sited:<br />Is the information cited?
 </th>
-		<td id="D3" onclick="nine();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
+		<td id="D3" onclick="nine();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 								The work is original research/info by a reputable source.  There is a Works Cited list and/or a Bibliography.
 									
 </td>
-		<td id="D2" onclick="ten();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
+		<td id="D2" onclick="ten();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 								The work is a compilation of research/info by a reputable source. No Works Cited information as a list.
 									
 </td>
-		<td id="D1" onclick="eleven();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
+		<td id="D1" onclick="eleven();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 								There is a statement about the source of information embedded in the source, but no Works Cited list.
 								
 </td>
-		<td id="D0" onclick="twelve();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();">
+		<td id="D0" onclick="twelve();lime();gold();chocolate();red();BILLY3();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 				
 								No indication of where the information came from.
 </td>
@@ -690,16 +685,16 @@ Look for the symbols ~% or the words "users" "members" etc. in the URL
 		<td id="H1"></td>
 		<th id="EE">Purpose:<br />Why was this information published?
 </th>
-		<td id="E3" onclick="thirteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">To promote scholarly research.</td>
-		<td id="E2" onclick="fourteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
+		<td id="E3" onclick="thirteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">To promote scholarly research.</td>
+		<td id="E2" onclick="fourteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 							To provide factual information. Some opinion may be included.
 							
 </td>
-		<td id="E1" onclick="fifteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
+		<td id="E1" onclick="fifteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 							To sell something, to persuade, or to promote an idea.
 								
 </td>
-		<td id="E0" onclick="sixteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();">
+		<td id="E0" onclick="sixteen();lime();gold();chocolate();red();BILLY4();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 							For personal or entertainment purposes.
 								
 </td>
@@ -708,7 +703,7 @@ Look for the symbols ~% or the words "users" "members" etc. in the URL
 		<td id="H0"></td>
 		<th id="FF">Date:<br />How current is the information?
 </th>
-		<td id="F3" onclick="seventeen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
+		<td id="F3" onclick="seventeen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 Online:
 The info is less than 1 year old.
 
@@ -716,7 +711,7 @@ The info is less than 1 year old.
 Print:
 The info is less than 3 years old.
 	</td>
-		<td id="F2" onclick="eighteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
+		<td id="F2" onclick="eighteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 Online: 
 The info is less than 3 years old.
 
@@ -724,10 +719,10 @@ The info is less than 3 years old.
 Print:
 The information is more than 3 years old, but is not necessarily out of date.
 	</td>
-		<td id="F1" onclick="nineteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
+		<td id="F1" onclick="nineteen();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 The information is more than five years old.
 	</td>
-		<td id="F0" onclick="twenty();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();">
+		<td id="F0" onclick="twenty();lime();gold();chocolate();red();BILLY5();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 There is no indication of when the information was published.
 	</td>
 	</tr>
@@ -735,16 +730,16 @@ There is no indication of when the information was published.
 	<tr id="G">
 		<td id="HHH"></td>
 		<th id="GG">Substance:</th>
-		<td id="G3" onclick="twentyOne();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
+		<td id="G3" onclick="twentyOne();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 				Depth of coverage needed for your purpose and written at a college or professional level.
-	/td>
-		<td id="G2" onclick="twentyTwo();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
+	</td>
+		<td id="G2" onclick="twentyTwo();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 				Written for the general public.
 	</td>
-		<td id="G1" onclick="twentyThree();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
+		<td id="G1" onclick="twentyThree();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 				Lacking the depth needed for your purpose.
 	</td>
-		<td id="G0" onclick="twentyFour();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();">
+		<td id="G0" onclick="twentyFour();lime();gold();chocolate();red();BILLY6();I();II();III();IV();V();VI();VII();VIII();VIIII();X();">
 				No depth, contains excessive colloquialisms, slang, use of "I"
 	</td>
 	</tr>
@@ -752,13 +747,24 @@ There is no indication of when the information was published.
 		<td id="BANANA" colspan="6" ></td>
 	
 </table>
-<div id="Bobby">Score Totals:<br />
-<div id="Bobby2">0-6	This source is highly questionable. Should not be used in research without suitable justification. (Attach your reasons for using a source with this score).<br />
-<div id="Bobby3">7-10	The site may be an acceptable starting point for gathering information, but may not be suitable as a cited source in a research project.<br />
-<div id="Bobby4">11-14	Good source for research. Information should be confirmed in other sources.<br />
-<div id="Bobby5">15-18	Excellent source for research purpose.<br /> 
 
-	
+<table id="Table2" style="width:90%; margin:auto" border="2" width="1400" cellpadding="10" cellspacing="5">
+<tr>
+<td id="Bobby">Score Totals:<br /></td>
+</tr>
+<tr>
+<td id="Bobby2">0-6: This source is highly questionable. Should not be used in research without suitable justification. (Attach your reasons for using a source with this score).<br /></td>
+</tr>
+<tr>
+	<td id="Bobby3">7-10: The site may be an acceptable starting point for gathering information, but may not be suitable as a cited source in a research project.<br /></td>
+	</tr>
+	<tr>
+		<td id="Bobby4">11-14: Good source for research. Information should be confirmed in other sources.<br /></td>
+	</tr>
+	<tr>
+		<td id="Bobby5">15-18: Excellent source for research purpose.<br /> </td>
+	</tr>
+</table>	
 
 
 
